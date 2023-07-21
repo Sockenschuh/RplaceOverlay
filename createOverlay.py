@@ -1,9 +1,7 @@
 from PIL import Image
 
-# Define the dimensions
 width, height = 3000, 3000
 
-# Create a new image with white background
 img = Image.new('RGBA', (width, height), (0, 0, 0, 0))
 imgin = Image.open('merged.png').convert('RGBA')
 pixels = img.load()
